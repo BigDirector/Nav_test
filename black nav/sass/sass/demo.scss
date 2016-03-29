@@ -1,0 +1,88 @@
+@import 'compass/reset';
+
+a{
+    text-decoration: none;
+    color: rgb(153,153,153);
+    font-size: 1.3em;
+}
+body{
+    font-size: 63%;
+    background-image: url(../../img/bodyBg.png);
+}
+
+/*my reset*/
+
+nav{
+    min-height: 20px;
+    width: 80%;
+    margin: 0 auto;
+    background:linear-gradient(rgb(66,66,66),rgb(20,20,20));
+    margin-top: 50px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px 0px #424242;
+    border: 1px solid rgb(34,34,34);
+}
+nav li{
+    display: inline-block;
+    padding: 12px 30px;
+    border-right: 1px solid #141414;
+    cursor: pointer;
+    &:hover >a{
+        color: white;
+    }
+    &:hover .hidden{
+        display: block;
+    }
+}
+/*my nav*/
+
+.hidden{
+    position: absolute;
+    margin:14px 0px 0px -40px ;
+    background:linear-gradient(rgb(66,66,66),rgb(20,20,20));
+    display: none;
+    border-radius: 5px;
+}
+.hidden li{
+    display: block;
+    border: none;
+    border-bottom: 1px dashed #222222;
+}
+.hidden:before {
+content: '';
+display: inline-block;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-bottom: 6px solid #CCC;
+position: absolute;
+top: -7px;
+left: 50px;
+}
+
+/*my hidden*/
+
+
+
+
+
+
+/*my animate*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
