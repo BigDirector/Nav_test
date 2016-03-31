@@ -1,0 +1,87 @@
+@import 'compass/reset';
+
+body{font-size: 63%; background-image: url(../../img/bodyBg.png);}
+li{list-style: none;}
+a{text-decoration: none;  color: white; font-weight: 400;}
+/*my reset*/
+
+nav{margin: 0 auto; background-color:darkgray; margin-top: 10px;width: 85%; min-width: 800px; border-radius: 5px;}
+#n-block{position: absolute; width: 180px; font-size: 1.5em;background-color: crimson; z-index: 10;
+         box-shadow:2px -1px 3px rgba(55,55,55,0.5);color: white;}
+#n-block-title{margin-left: 8px;line-height: 40px;}      
+#n-block ul{margin-top: 10px;}   
+#n-block li{font-size:0.9em;height: 4.5em;padding-left: 8px;}
+#n-block li:after{
+    content: '';
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid white;
+    position: absolute;
+    right: 10px;
+    margin-top: -10px;
+}
+
+
+#n-ul{display: inline-block; margin-left:200px ; font-size: 1.4em; min-width: 600px;}
+#n-ul li{display: inline-block; padding: 1em 1.5em 1em 1.5em;}
+#n-ul li:hover{background-color:crimson;}
+
+
+.n-checked{
+    display: inline;
+    background-color: darkred;
+    border-radius:5px;
+    padding:3px;
+    font-size: 0.8em;
+}
+.n-block-bottom{
+    font-size: 0.7em;
+    padding-top:10px;
+}
+.n-block-bottom a{
+    color:gainsboro;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family:"icon";
+    src:url(../../iconFont/foundation-icons.svg);
+    src: url(../../iconFont/foundation-icons.ttf);
+    src: url(../../iconFont/foundation-icons.eot);
+    src: url(../../iconFont/foundation-icons.woff);
+    
+}
+.w-icon{
+    font-family: 'icon';
+    font-size: 24px;
+    position: absolute;
+    top:0;  
+    color:white;
+}
+
+/*my icon*/
+
+#logo{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3em;
+    color: lavender;
+}
+
+
+
+
