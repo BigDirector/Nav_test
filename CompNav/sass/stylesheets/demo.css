@@ -1,0 +1,179 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  font-size: 63%;
+  background-image: url(../../img/bodyBg.png);
+}
+
+a {
+  text-decoration: none;
+  color: #63aaca;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+}
+
+/*my reset*/
+nav {
+  min-width: 1520px;
+  min-height: 45px;
+  border-bottom: 2px solid lightblue;
+  box-shadow: 2px 1px 2px #63aaca;
+}
+
+#n-ul {
+  margin: auto 20% auto 20%;
+}
+
+#n-ul > li {
+  float: left;
+  line-height: 45px;
+  font-size: 1.4em;
+  margin: auto 1em auto 1em;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#n-phone {
+  height: 100%;
+  background-color: #63aaca;
+  display: inline-block;
+  line-height: 45px;
+  margin-left: 15em;
+  color: white;
+  text-align: center;
+}
+
+#n-phone p {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+#logo {
+  font-size: 3em;
+  color: lightsteelblue;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*my nav*/
+#n-ul > li:hover {
+  border-top: 2px solid #63aaca;
+}
+
+#n-ul li:hover .n-hidden {
+  display: block;
+  
+}
+.n-hidden li{
+    line-height: 2.5em;
+    font-weight: normal;
+}
+
+/*my nav hover*/
+.n-hidden {
+  position: absolute;
+  display: none;
+  animation:nav-h .1s ease;
+  -moz-animation: nav-h .1s ease;
+  -webkit-animation: nav-h .1s ease;
+  z-index:100; 
+  }
+
+/*my nav hidden*/
+
+@-webkit-keyframes nav-h{
+	0%{ opacity: 0;-webkit-transform: translateY(-45px);};
+	100%{opacity: 1;-webkit-transform: translateY(0px);}
+}
+@-moz-keyframes nav-h{
+	0%{ opacity: 0;-moz-transform: translateY(-45px);};
+	100%{opacity: 1;-moz-transform: translateY(0px);}
+}
+@-o-keyframes nav-h{
+	0%{ opacity: 0;transform: translateY(-45px);};
+	100%{opacity: 1;transform: translateY(0px);}
+}
+
+
+/*my animate*/
+
+
+@font-face {
+	font-family:"icon";
+	src:url(../../iconFont/foundation-icons.svg);
+	src: url(../../iconFont/foundation-icons.ttf);
+	src: url(../../iconFont/foundation-icons.eot);
+	src: url(../../iconFont/foundation-icons.woff);
+	
+}
+
+
+/*my iconfont*/
+.iconfont{
+	font-family: "icon";
+}
+
+
+
+
+

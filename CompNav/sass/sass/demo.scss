@@ -1,0 +1,80 @@
+@import'compass/reset';
+body{
+    font-size: 63%;
+    background-image: url(../../img/bodyBg.png);
+}
+a{
+    text-decoration: none;
+    color: rgb(99, 170, 202);
+    font-weight: bold;
+    
+}
+li{
+    list-style: none;
+}
+/*my reset*/
+
+nav{
+    min-width: 100%;
+    min-height: 45px;
+    border-bottom: 2px solid lightblue;
+    box-shadow: 2px 1px 2px rgb(99,170,202);
+}
+#n-ul{
+    margin:auto 20% auto 20%;
+}
+#n-ul>li{
+    float: left;
+    line-height: 45px;
+    font-size: 1.4em;
+    margin: auto 1em auto 1em;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#n-phone{
+    height: 100%;
+    
+    background-color: rgb(99, 170, 202);
+    display: inline-block;
+    line-height: 45px;
+    margin-left:15em ;
+    color: white;
+    text-align: center;
+}
+#n-phone p{
+    padding-left:10px ;
+    padding-right:10px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+#logo{
+    font-size: 3em;
+    color: lightsteelblue;
+    text-align: center;
+    margin-top:20px ;
+}
+/*my nav*/
+#n-ul>li:hover{
+    border-top:2px solid rgb(99,170,202) ;
+}
+#n-ul li:hover .n-hidden{
+    display: block;
+}
+/*my nav hover*/
+
+.n-hidden{
+    position: absolute;
+    display: none;
+}
+
+/*my nav hidden*/
+
+
+
+
+
+/*my animate*/
+
+
+
