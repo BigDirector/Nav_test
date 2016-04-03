@@ -1,0 +1,128 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1;
+	font-size: 63%;
+	color: white;
+}
+ul,li,p{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+/*My reset*/
+
+@font-face {
+	font-family:myicon;
+	src: url(../font/foundation-icons.svg);
+	
+}
+
+.test{
+	font-family: myicon!important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*my font-face*/
+
+header{
+	height: 60px;
+	background-color: rgb(39,48,63);
+	position: relative;
+	z-index: 18;
+}
+nav{
+	margin-left: 25%;
+	position: absolute;
+	height: 60px;
+	font-size: 1.5em;
+	float: left;
+	z-index: 20;
+}
+nav ul li{
+	padding: 0 25px;
+	line-height: 60px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+nav ul li:hover{
+	background-color: rgb(52,65,87);
+}
+
+
+.list-hidden{
+	z-index: 10;
+	margin-left: -1000px;
+	width: 2500px;
+	height: 200px;
+	background-color:rgb(52,65,87);
+	position: absolute;
+	display: none;
+	animation: myani .5s ease;
+	-moz-animation: myani .5s ease;
+	-webkit-animation: myani .5s ease;
+}
+nav ul li:hover .list-hidden{
+	display: block;
+}
+
+
+
+
+
+/*my animate*/
+
+@-moz-keyframes myani{
+	0%{
+		opacity: 0.8;
+		-moz-transform: translateY(-5px);
+	}
+	100%{
+		opacity: 1;
+		-moz-transform: translateY(0px);
+	}
+}
+@-webkit-keyframes myani{
+	0%{
+		opacity: 0.8;
+		-webkit-transform: translateY(-5px);
+	}
+	100%{
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+}
+@keyframes myani{
+	0%{
+		opacity: 0.8;
+		transform: translateY(-5px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
